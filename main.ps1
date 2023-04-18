@@ -24,7 +24,7 @@ $button.Size = New-Object System.Drawing.Size(230,20)
 $button.Text = 'Change name'
 $button.Add_Click({
     UpdateDscConfiguration -computerName $inputBox.Text
-    $richTextBox.AppendText("Change DSC config file to`r`n" + $inputBox.Text)
+    $richTextBox.AppendText("Change DSC config file to " + $inputBox.Text + "`r`n")
 })
 $form.Controls.Add($button)
 
@@ -34,7 +34,7 @@ $buttonApply.Size = New-Object System.Drawing.Size(230,20)
 $buttonApply.Text = 'Apply DSC'
 $buttonApply.Add_Click({
     ApplyDscConfiguration -CompName $inputBox.Text
-    $richTextBox.AppendText("Apply DSC confiuration on`r`n" + $inputBox.Text)
+    $richTextBox.AppendText("Apply DSC confiuration on " + $inputBox.Text+ "`r`n")
 })
 $form.Controls.Add($buttonApply)
 
