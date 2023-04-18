@@ -2,7 +2,7 @@ configuration FILESERVER {
     
     Import-DSCResource -ModuleName PSDesiredStateConfiguration
     
-    node "Srv3" {
+    node "123" {
         
         WindowsFeature FSFileServer {
             Name = "FS-FileServer"
@@ -47,6 +47,7 @@ configuration FILESERVER {
         }
     }
 }
+
 
 
 

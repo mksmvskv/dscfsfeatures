@@ -1,0 +1,1 @@
+Get-WindowsFeature |where {$PSItem.installed -eq $true}
